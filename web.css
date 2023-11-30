@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+body{
+    background-image: url(sky4.jpg);
+   background-repeat: no-repeat;
+   background-size: 100vw ;
+   font-family: 'Brush Script MT', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+   
+    text-align: center;    
+    background:none;
+    margin: 10px;
+    width: 200px;
+}
+
+
+.menu {
+    
+    width: 200px;
+    padding: 10px; 
+    
+    
+
+}
+#menuhater{
+    background-color: aqua;
+    width: 200px;
+    height: 295px;
+    border-radius: 6px;
+    display: none; 
+}
+.icon{
+    background: black;
+  display: block;
+  position: absolute;
+  
+}
+li a:hover{
+    background-color: rgb(11, 120, 174);
+}
+.dark-mode {
+    background-image: url(moon\ sky.avif);
+    color: white;
+    
+    
+}
+
+ul{
+    padding: 0;
+  margin: 0;
+}
+div li a:hover{
+    background-color: rgb(11, 120, 174);
+}
+div li{
+    display: table-cell;
+    vertical-align: top;
+    overflow: hidden;
+    background-color: lightblue;
+    
+   
+    border-radius: 6px;
+    
+    
+    color: black;
+    list-style-type: none;
+}
+div li a {
+    text-decoration: none;
+    width: 50px;
+    height: 120px;
+    padding: 17px;
+    color: black;
+}
+.dark{
+    float: right;
+}
+.mySlides {display:none;}
+.kepek{
+    width: 900px;
+    height: 390px;
+    display: block;
+    position: relative;
+    left: 320px;
+    
+    
+}
+
+.container{
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} 
+nav ul li a{
+    
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+    <div id="felsoszin">
+        <h1>ComfortCove</h1>
+       
+    </div>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Párnák</a></li>
+                    <li><a href="#about">Takarok</a></li>
+                    
+                    <li> <a href="#porfolio">Álatos párnák</a></li>
+                    <li> <a href="#porfolio">Akcios termékek</a></li>
+                    <li>
+                        <a href="#contact">Pizsamák</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+           
+        </div>
+    </div>
+    <button onclick="myFunction()" class="dark">Toggle dark mode</button>
+  
+    <div class="w3-content w3-section" style="max-width:500px">
+        
+      
+        <img class="kepek" src="párna1.jpg" >
+        <img class="kepek" src="takaro1.webp" >
+        <img class="kepek" src="img_rr_03.jpg" >
+        <img class="kepek" src="img_rr_04.jpg" >
+      </div>
+        
+   
+   
+    
+    <script>
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("kepek");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+    </script>
+</body>
+</html>
